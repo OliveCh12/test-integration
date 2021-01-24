@@ -1,0 +1,17 @@
+// Convert pixels units to em
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
+
+// Convert pixels units to rem
+@function rem($size, $context: $browser-context) {
+  @return $size / $context * 1rem;
+}

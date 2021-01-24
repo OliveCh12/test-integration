@@ -1,0 +1,29 @@
+.button {
+  cursor: pointer;
+  background-color: $dark;
+  border: 0;
+  color: $light;
+  padding: em(12) em(52);
+  border-radius: 50px;
+  font-weight: 700;
+  width: fit-content;
+
+  &:hover {
+    background-color: ligthen($dark, 5%);
+  }
+  &:active {
+    background-color: ligthen($dark, 10%);
+  }
+}
+
+.button--light {
+  background-color: $light;
+  color: $dark;
+
+  &:hover {
+    background-color: darken($light, 5%);
+  }
+  &:active {
+    background-color: darken($light, 10%);
+  }
+}

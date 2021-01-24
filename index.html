@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sollic</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__menu" id="header__menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <a href="/" class="header__brand">
+          <img class="header__logo" src="/assets/logo.svg" alt="Sollic" />
+          <span class="header__baseline">
+            Etiam porta sem malesuada magna
+          </span>
+        </a>
+
+        <div class="header__links">
+          <a href="/" class="header__link">Cras</a>
+          <a href="/" class="header__link">Quam</a>
+          <a href="/" class="header__link">Mattis</a>
+          <a href="/" class="header__link">Cras</a>
+          <a href="/" class="header__link">Etiam</a>
+          <a href="/" class="header__link">Pharetra</a>
+          <img
+            class="header__search header__search--desktop"
+            src="./assets/Forme.svg"
+            alt="search"
+          />
+        </div>
+
+        <img class="header__search" src="./assets/Forme.svg" alt="search" />
+      </nav>
+    </header>
+
+    <div class="container">
+      <section class="hero">
+        <img
+          class="hero__image"
+          src="./assets/effeil_tower.jpg"
+          alt="effeil_tower"
+        />
+        <div class="hero__content">
+          <h2 class="hero__text">
+            Cras justo odio, dapibus <strong>ac facilisis</strong> in, egestas
+            eget quam.
+          </h2>
+          <button class="button button--light">Nullam Vulputate Tortor</button>
+        </div>
+      </section>
+
+      <section class="articles">
+        <article class="article article--featured">
+          <img
+            class="article__image"
+            src="https://images.unsplash.com/photo-1579426922688-8b4607285cd2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2059&q=80"
+            alt="Image Preview"
+          />
+          <div>
+            <header class="article__header">
+              <span class="article__tag">Design</span>
+              <div class="article__title-container">
+                <h2 class="article__title">Venenatis Ullamcorper</h2>
+                <a class="article__arrow" href="">
+                  <img src="./assets/arrow_right.svg" alt="Discover Article" />
+                </a>
+              </div>
+              <time class="article__date" datetime="2015-29-04"
+                >29 Avril 2015</time
+              >
+            </header>
+            <p class="article__text">
+              Sed posuere consectetur est at lobortis. Duis mollis, est non
+              commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
+              nec elit. Praesent commodo cursus magna, vel scelerisque nisl
+              consectetur et. Cras mattis consectetur purus sit amet fermentum.
+              Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+              auctor. Donec sed odio dui. Cras mattis consectetur purus sit amet
+              fermentum.
+            </p>
+          </div>
+        </article>
+        <article class="article">
+          <img
+            class="article__image"
+            src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+            alt="Image Preview"
+          />
+          <header class="article__header">
+            <span class="article__tag">Design</span>
+            <div class="article__title-container">
+              <h2 class="article__title">Venenatis Ullamcorper</h2>
+              <a class="article__arrow" href="">
+                <img src="./assets/arrow_right.svg" alt="Discover Article" />
+              </a>
+            </div>
+            <time class="article__date" datetime="2015-29-04"
+              >29 Avril 2015</time
+            >
+          </header>
+          <p class="article__text">
+            Sed posuere consectetur est at lobortis. Duis mollis, est non
+            commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
+            nec elit. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Cras mattis consectetur purus sit amet fermentum.
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor. Donec sed odio dui. Cras mattis consectetur purus sit amet
+            fermentum.
+          </p>
+        </article>
+        <article class="article">
+          <img
+            class="article__image"
+            src="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2094&q=80"
+            alt="Image Preview"
+          />
+          <header class="article__header">
+            <span class="article__tag">Design</span>
+            <div class="article__title-container">
+              <h2 class="article__title">Venenatis Ullamcorper</h2>
+              <a class="article__arrow" href="">
+                <img src="./assets/arrow_right.svg" alt="Discover Article" />
+              </a>
+            </div>
+            <time class="article__date" datetime="2015-29-04"
+              >29 Avril 2015</time
+            >
+          </header>
+          <p class="article__text">
+            Sed posuere consectetur est at lobortis. Duis mollis, est non
+            commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
+            nec elit. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Cras mattis consectetur purus sit amet fermentum.
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor. Donec sed odio dui. Cras mattis consectetur purus sit amet
+            fermentum.
+          </p>
+        </article>
+        <article class="article">
+          <img
+            class="article__image"
+            src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80"
+            alt="Image Preview"
+          />
+          <header class="article__header">
+            <span class="article__tag">Design</span>
+            <div class="article__title-container">
+              <h2 class="article__title">Venenatis Ullamcorper</h2>
+              <a class="article__arrow" href="">
+                <img src="./assets/arrow_right.svg" alt="Discover Article" />
+              </a>
+            </div>
+            <time class="article__date" datetime="2015-29-04"
+              >29 Avril 2015</time
+            >
+          </header>
+          <p class="article__text">
+            Sed posuere consectetur est at lobortis. Duis mollis, est non
+            commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
+            nec elit. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Cras mattis consectetur purus sit amet fermentum.
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor. Donec sed odio dui. Cras mattis consectetur purus sit amet
+            fermentum.
+          </p>
+        </article>
+        <article class="article">
+          <img
+            class="article__image"
+            src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80"
+            alt="Image Preview"
+          />
+          <header class="article__header">
+            <span class="article__tag">Design</span>
+            <div class="article__title-container">
+              <h2 class="article__title">Venenatis Ullamcorper</h2>
+              <a class="article__arrow" href="">
+                <img src="./assets/arrow_right.svg" alt="Discover Article" />
+              </a>
+            </div>
+            <time class="article__date" datetime="2015-29-04"
+              >29 Avril 2015</time
+            >
+          </header>
+          <p class="article__text">
+            Sed posuere consectetur est at lobortis. Duis mollis, est non
+            commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
+            nec elit. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Cras mattis consectetur purus sit amet fermentum.
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor. Donec sed odio dui. Cras mattis consectetur purus sit amet
+            fermentum.
+          </p>
+        </article>
+        <article class="article">
+          <img
+            class="article__image"
+            src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80"
+            alt="Image Preview"
+          />
+          <header class="article__header">
+            <span class="article__tag">Design</span>
+            <div class="article__title-container">
+              <h2 class="article__title">Venenatis Ullamcorper</h2>
+              <a class="article__arrow" href="">
+                <img src="./assets/arrow_right.svg" alt="Discover Article" />
+              </a>
+            </div>
+            <time class="article__date" datetime="2015-29-04"
+              >29 Avril 2015</time
+            >
+          </header>
+          <p class="article__text">
+            Sed posuere consectetur est at lobortis. Duis mollis, est non
+            commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
+            nec elit. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Cras mattis consectetur purus sit amet fermentum.
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor. Donec sed odio dui. Cras mattis consectetur purus sit amet
+            fermentum.
+          </p>
+        </article>
+      </section>
+    </div>
+
+    <!-- Footer & Blocks -->
+    <!-- <footer class="footer">
+      <div class="container">
+        <div class="footer__blocks">
+          <div class="footer__block footer__block--expand">
+            <div class="footer__brand">
+              <img class="footer__logo" src="/assets/logo.svg" alt="Sollic" />
+              <span class="footer__baseline">
+                Etiam porta sem malesuada magna mollis euismod.
+              </span>
+            </div>
+          </div>
+
+          <div class="footer__block">
+            <span class="footer__heading">Tristique</span>
+            <p class="footer__text">
+              Cras justo odio dapibus ac facilisis egestas eget Maecenas
+              faucibus mollis interdum Praesent commodo cursus magna
+            </p>
+          </div>
+          <div class="footer__block">
+            <span class="footer__heading">Tristique</span>
+            <p class="footer__text">
+              Cras justo odio dapibus ac facilisis egestas eget Maecenas
+              faucibus mollis interdum Praesent commodo cursus magna
+            </p>
+          </div>
+          <div class="footer__block">
+            <span class="footer__heading">Tristique</span>
+            <p class="footer__text">
+              Cras justo odio dapibus ac facilisis egestas eget Maecenas
+              faucibus mollis interdum Praesent commodo cursus magna
+            </p>
+          </div>
+          <div class="footer__block">
+            <span class="footer__heading">Tristique</span>
+            <p class="footer__text">
+              Cras justo odio dapibus ac facilisis egestas eget Maecenas
+              faucibus mollis interdum Praesent commodo cursus magna
+            </p>
+          </div>
+        </div> -->
+
+    <!-- <div class="footer__bottom">Sollic 2016</div> -->
+    <!-- </div>
+    </footer> -->
+    <script src="./script/index.js"></script>
+  </body>
+</html>

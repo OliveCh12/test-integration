@@ -1,0 +1,129 @@
+.articles {
+  display: grid;
+  gap: rem(30);
+}
+
+@for $i from 1 through 3 {
+  .articles--col-#{$i} {
+    grid-template-rows: auto;
+    grid-template-columns: none;
+
+    @include responsive-for(large) {
+      grid-template-columns: repeat($i, 1fr);
+    }
+  }
+}
+
+.article {
+  &__header {
+    margin-top: 0;
+    padding-top: rem(30);
+    padding-bottom: rem(15);
+    border-bottom: 1px solid rgba($color: $dark, $alpha: 0.1);
+  }
+
+  &__image {
+    cursor: pointer;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 15px 10px rgba($color: $dark, $alpha: 0.2);
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  &__tag {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: em(11);
+    color: $dark;
+    // margin-bottom: rem(10);
+  }
+  &__title-container {
+    display: block;
+    transition: $transition;
+    // margin-bottom: rem(6);
+
+    &:hover {
+      cursor: pointer;
+      transform: translateX(15px);
+      opacity: 0.7;
+    }
+  }
+  &__title {
+    color: $dark;
+    font-size: em(24);
+  }
+  &__arrow {
+    display: none;
+    height: em(11);
+    width: em(26);
+  }
+  &__date {
+    color: $dark;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  &__text {
+    font-size: em(14);
+    letter-spacing: em(0.5);
+  }
+}
+
+.article--row {
+  display: grid;
+  grid-template-columns: none;
+  grid-template-rows: auto;
+  gap: 0;
+}
+
+@include responsive-for(medium) {
+  .articles {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+// Desktop Layout
+@include responsive-for(large) {
+  .articles {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  .article {
+    &__title-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__arrow {
+      display: block;
+    }
+  }
+  .article--featured {
+    grid-row: 1;
+    grid-column: 1 / span 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(30);
+    margin-top: -5rem;
+    z-index: 5;
+  }
+
+  .article:nth-child(2),
+  .article:nth-child(3),
+  .article:nth-child(4) {
+    grid-column: span 2;
+  }
+  .article:nth-child(5),
+  .article:nth-child(6) {
+    grid-column: span 3;
+  }
+}

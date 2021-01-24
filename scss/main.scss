@@ -1,0 +1,14 @@
+@import "variables";
+@import "./abstracts/mixins";
+@import "./abstracts/functions";
+@import "./library/reset.scss";
+@import "globals";
+
+// Components
+@import "components/buttons";
+@import "components/header";
+@import "components/footer";
+@import "components/hero";
+@import "components/articles";
+
+// Mobile Layout First --> Desktop Layout

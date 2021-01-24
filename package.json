@@ -1,0 +1,16 @@
+{
+  "name": "colorz-test",
+  "version": "1.0.0",
+  "description": "Test d'intégration pour le post de développeur front",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch scss/main.scss:css/style.css",
+    "start": "http-server"
+  },
+  "author": "Olivier Chemla",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
