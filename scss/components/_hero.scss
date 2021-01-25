@@ -6,6 +6,7 @@
     url("../images/effeil_tower.jpg");
   background-size: cover;
   background-blend-mode: hard-light;
+  z-index: -2;
 
   &__content {
     display: flex;
