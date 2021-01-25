@@ -1,16 +1,22 @@
 {
   "name": "colorz-test",
   "version": "1.0.0",
-  "description": "Test d'intégration pour le post de développeur front",
+  "description": "Test d'intégration",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "sass --watch scss/main.scss:css/style.css",
-    "start": "http-server"
+    "watch": "sass --watch --no-source-map scss/main.scss:css/style.css",
+    "prefix": "npx postcss --no-map css/*.css --use autoprefixer -d css/",
+    "build": "sass --no-source-map scss/main.scss:css/style-min.css --style compressed && npm run prefix && http-server"
   },
   "author": "Olivier Chemla",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^10.2.3",
     "http-server": "^0.12.3"
+  },
+  "devDependencies": {
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1"
   }
 }

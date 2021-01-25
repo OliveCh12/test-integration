@@ -1,20 +1,13 @@
 .articles {
   display: grid;
   gap: rem(30);
+  padding: rem(30) 0;
 }
-
-@for $i from 1 through 3 {
-  .articles--col-#{$i} {
-    grid-template-rows: auto;
-    grid-template-columns: none;
-
-    @include responsive-for(large) {
-      grid-template-columns: repeat($i, 1fr);
-    }
-  }
-}
-
 .article {
+  cursor: pointer;
+  transition: $transition;
+  box-sizing: content-box;
+
   &__header {
     margin-top: 0;
     padding-top: rem(30);
@@ -23,19 +16,8 @@
   }
 
   &__image {
-    cursor: pointer;
     width: 100%;
-    height: 260px;
     object-fit: cover;
-    transition: $transition;
-
-    &:hover {
-      transform: scale(1.05);
-      box-shadow: 0px 15px 10px rgba($color: $dark, $alpha: 0.2);
-    }
-    &:active {
-      transform: scale(0.95);
-    }
   }
   &__tag {
     display: block;
@@ -43,12 +25,10 @@
     font-weight: 700;
     font-size: em(11);
     color: $dark;
-    // margin-bottom: rem(10);
   }
   &__title-container {
     display: block;
     transition: $transition;
-    // margin-bottom: rem(6);
 
     &:hover {
       cursor: pointer;
@@ -96,6 +76,7 @@
   .articles {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, auto);
+    margin-top: 0;
   }
   .article {
     &__title-container {
@@ -108,13 +89,25 @@
     }
   }
   .article--featured {
+    display: flex;
+    align-items: flex-end;
     grid-row: 1;
     grid-column: 1 / span 6;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: rem(30);
-    margin-top: -5rem;
-    z-index: 5;
+    z-index: 2;
+    margin-top: rem(-70);
+
+    & > div {
+      margin-left: rem(30);
+    }
+
+    .article__title {
+      font-size: em(28);
+    }
+
+    .article__image {
+      width: 540px;
+      height: 400px;
+    }
   }
 
   .article:nth-child(2),

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Page Header -->
     <header class="header">
       <nav class="header__nav">
         <div class="header__menu" id="header__menu" onclick="toggleMenu()">
@@ -19,14 +20,12 @@
           <span></span>
           <span></span>
         </div>
-
         <a href="/" class="header__brand">
           <img class="header__logo" src="/assets/logo.svg" alt="Sollic" />
           <span class="header__baseline">
             Etiam porta sem malesuada magna
           </span>
         </a>
-
         <div class="header__links">
           <a href="/" class="header__link">Cras</a>
           <a href="/" class="header__link">Quam</a>
@@ -36,43 +35,39 @@
           <a href="/" class="header__link">Pharetra</a>
           <img
             class="header__search header__search--desktop"
-            src="./assets/Forme.svg"
+            src="./assets/magnifier.svg"
             alt="search"
           />
         </div>
-
-        <img class="header__search" src="./assets/Forme.svg" alt="search" />
+        <img class="header__search" src="./assets/magnifier.svg" alt="search" />
       </nav>
     </header>
 
-    <div class="container">
-      <section class="hero">
-        <img
-          class="hero__image"
-          src="./assets/effeil_tower.jpg"
-          alt="effeil_tower"
-        />
-        <div class="hero__content">
-          <h2 class="hero__text">
-            Cras justo odio, dapibus <strong>ac facilisis</strong> in, egestas
-            eget quam.
-          </h2>
-          <button class="button button--light">Nullam Vulputate Tortor</button>
-        </div>
-      </section>
+    <!-- Page Hero -->
+    <section class="hero">
+      <div class="hero__content">
+        <h2 class="hero__text">
+          Cras justo odio, dapibus <strong>ac facilisis</strong> in, egestas
+          eget quam.
+        </h2>
+        <button class="button button--light">Nullam Vulputate Tortor</button>
+      </div>
+    </section>
 
+    <div class="container container--light">
+      <!-- Page Articles -->
       <section class="articles">
         <article class="article article--featured">
           <img
             class="article__image"
-            src="https://images.unsplash.com/photo-1579426922688-8b4607285cd2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2059&q=80"
+            src="./images/blog-post1.png"
             alt="Image Preview"
           />
           <div>
             <header class="article__header">
               <span class="article__tag">Design</span>
               <div class="article__title-container">
-                <h2 class="article__title">Venenatis Ullamcorper</h2>
+                <h3 class="article__title">Venenatis Ullamcorper</h3>
                 <a class="article__arrow" href="">
                   <img src="./assets/arrow_right.svg" alt="Discover Article" />
                 </a>
@@ -95,13 +90,13 @@
         <article class="article">
           <img
             class="article__image"
-            src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+            src="./images/blog-post2.png"
             alt="Image Preview"
           />
           <header class="article__header">
             <span class="article__tag">Design</span>
             <div class="article__title-container">
-              <h2 class="article__title">Venenatis Ullamcorper</h2>
+              <h3 class="article__title">Venenatis Ullamcorper</h3>
               <a class="article__arrow" href="">
                 <img src="./assets/arrow_right.svg" alt="Discover Article" />
               </a>
@@ -123,13 +118,13 @@
         <article class="article">
           <img
             class="article__image"
-            src="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2094&q=80"
+            src="./images/blog-post3.png"
             alt="Image Preview"
           />
           <header class="article__header">
             <span class="article__tag">Design</span>
             <div class="article__title-container">
-              <h2 class="article__title">Venenatis Ullamcorper</h2>
+              <h3 class="article__title">Venenatis Ullamcorper</h3>
               <a class="article__arrow" href="">
                 <img src="./assets/arrow_right.svg" alt="Discover Article" />
               </a>
@@ -151,13 +146,13 @@
         <article class="article">
           <img
             class="article__image"
-            src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80"
+            src="./images/blog-post4.png"
             alt="Image Preview"
           />
           <header class="article__header">
             <span class="article__tag">Design</span>
             <div class="article__title-container">
-              <h2 class="article__title">Venenatis Ullamcorper</h2>
+              <h3 class="article__title">Venenatis Ullamcorper</h3>
               <a class="article__arrow" href="">
                 <img src="./assets/arrow_right.svg" alt="Discover Article" />
               </a>
@@ -179,13 +174,13 @@
         <article class="article">
           <img
             class="article__image"
-            src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80"
+            src="./images/blog-post5.png"
             alt="Image Preview"
           />
           <header class="article__header">
             <span class="article__tag">Design</span>
             <div class="article__title-container">
-              <h2 class="article__title">Venenatis Ullamcorper</h2>
+              <h3 class="article__title">Venenatis Ullamcorper</h3>
               <a class="article__arrow" href="">
                 <img src="./assets/arrow_right.svg" alt="Discover Article" />
               </a>
@@ -207,13 +202,13 @@
         <article class="article">
           <img
             class="article__image"
-            src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80"
+            src="./images/blog-post6.png"
             alt="Image Preview"
           />
           <header class="article__header">
             <span class="article__tag">Design</span>
             <div class="article__title-container">
-              <h2 class="article__title">Venenatis Ullamcorper</h2>
+              <h3 class="article__title">Venenatis Ullamcorper</h3>
               <a class="article__arrow" href="">
                 <img src="./assets/arrow_right.svg" alt="Discover Article" />
               </a>
@@ -235,52 +230,54 @@
       </section>
     </div>
 
-    <!-- Footer & Blocks -->
-    <!-- <footer class="footer">
+    <!-- Page Footer -->
+    <footer class="footer">
       <div class="container">
         <div class="footer__blocks">
-          <div class="footer__block footer__block--expand">
-            <div class="footer__brand">
-              <img class="footer__logo" src="/assets/logo.svg" alt="Sollic" />
-              <span class="footer__baseline">
-                Etiam porta sem malesuada magna mollis euismod.
-              </span>
-            </div>
-          </div>
-
           <div class="footer__block">
-            <span class="footer__heading">Tristique</span>
-            <p class="footer__text">
-              Cras justo odio dapibus ac facilisis egestas eget Maecenas
-              faucibus mollis interdum Praesent commodo cursus magna
+            <img
+              class="footer__logo"
+              src="./assets/logo-white.svg"
+              alt="Sollic"
+            />
+            <p class="footer__baseline">
+              Etiam porta sem malesuada magna mollis euismod.
             </p>
           </div>
           <div class="footer__block">
-            <span class="footer__heading">Tristique</span>
+            <h3 class="footer__title">Tristique</h3>
             <p class="footer__text">
-              Cras justo odio dapibus ac facilisis egestas eget Maecenas
-              faucibus mollis interdum Praesent commodo cursus magna
+              Cras justo odio Dapibus ac facilisis Egestas eget Maecenas
+              faucibus Mollis interdum Praesent commodo Cursus magna
             </p>
           </div>
           <div class="footer__block">
-            <span class="footer__heading">Tristique</span>
+            <h3 class="footer__title">Tristique</h3>
             <p class="footer__text">
-              Cras justo odio dapibus ac facilisis egestas eget Maecenas
-              faucibus mollis interdum Praesent commodo cursus magna
+              Cras justo odio Dapibus ac facilisis Egestas eget Maecenas
+              faucibus Mollis interdum Praesent commodo Cursus magna
             </p>
           </div>
           <div class="footer__block">
-            <span class="footer__heading">Tristique</span>
+            <h3 class="footer__title">Tristique</h3>
             <p class="footer__text">
-              Cras justo odio dapibus ac facilisis egestas eget Maecenas
-              faucibus mollis interdum Praesent commodo cursus magna
+              Cras justo odio Dapibus ac facilisis Egestas eget Maecenas
+              faucibus Mollis interdum Praesent commodo Cursus magna
             </p>
           </div>
-        </div> -->
-
-    <!-- <div class="footer__bottom">Sollic 2016</div> -->
-    <!-- </div>
-    </footer> -->
+          <div class="footer__block">
+            <h3 class="footer__title">Tristique</h3>
+            <p class="footer__text">
+              Cras justo odio Dapibus ac facilisis Egestas eget Maecenas
+              faucibus Mollis interdum Praesent commodo Cursus magna
+            </p>
+          </div>
+          <div class="footer__block">
+            <p class="footer__text">Sollic 2016</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./script/index.js"></script>
   </body>
 </html>

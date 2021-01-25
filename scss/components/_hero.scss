@@ -1,23 +1,13 @@
 .hero {
+  @include container;
   position: relative;
-  // background-color: seagreen;
   height: 350px;
+  background-image: linear-gradient(rgba($dark, 0.4), rgba($dark, 0.4)),
+    url("../images/effeil_tower.jpg");
+  background-size: cover;
+  background-blend-mode: hard-light;
 
-  // Mobile 📱
-  &__image {
-    position: abosolute;
-    object-fit: cover;
-    // mix-blend-mode: difference;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-  }
   &__content {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,6 +19,7 @@
     text-shadow: 5px 9px 27px rgba(0, 0, 0, 0.58);
     color: $light;
     line-height: 1em;
+    margin-bottom: rem(30);
 
     strong {
       font-weight: 300;
@@ -39,16 +30,21 @@
 // Desktop
 @include responsive-for(large) {
   .hero {
-    height: 650px;
-    background-color: slateblue;
+    height: 580px;
+    padding-left: rem(125);
 
     &__content {
       display: block;
-      max-width: 650px;
+      position: absolute;
+      top: rem(80);
+      max-width: rem(550);
+      height: auto;
     }
 
     &__text {
       font-size: em(65);
+      line-height: 1em;
+      margin-bottom: rem(55);
     }
   }
 }
