@@ -8,7 +8,6 @@
     gap: rem(30);
   }
   &__block {
-    // background-color: crimson;
     &:nth-child(1) {
       grid-column: 1 / span 2;
       display: flex;

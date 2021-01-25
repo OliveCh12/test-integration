@@ -13,10 +13,10 @@ a:hover {
   text-decoration: none;
   color: $dark;
 }
+
 .container {
   @include container;
 }
-
 .container--light {
   background-color: $light;
 }
