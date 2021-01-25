@@ -45,7 +45,8 @@ ol[class] {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -70,8 +71,10 @@ select {
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -116,6 +119,8 @@ a:hover {
   border-radius: 50px;
   font-size: 0.875em;
   font-weight: 700;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .button:hover {
@@ -209,14 +214,24 @@ a:hover {
   background-color: white;
   border-bottom: 1px solid rgba(28, 28, 29, 0.2);
   height: 300px;
-  z-index: 1;
+  z-index: -1;
   visibility: visible;
+  -webkit-animation: entrance 300ms ease-in-out;
+          animation: entrance 300ms ease-in-out;
 }
 .header__links--visible.header__links {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+@-webkit-keyframes entrance {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 @keyframes entrance {
   from {
@@ -337,7 +352,8 @@ a:hover {
 @media (min-width: 64em) {
   .footer__blocks {
     grid-template-columns: repeat(6, 1fr);
-    column-gap: 5.625rem;
+    -moz-column-gap: 5.625rem;
+         column-gap: 5.625rem;
     row-gap: 2.5rem;
   }
   .footer__block:last-child {
@@ -353,6 +369,7 @@ a:hover {
   background-image: linear-gradient(rgba(28, 28, 29, 0.4), rgba(28, 28, 29, 0.4)), url("../images/effeil_tower.jpg");
   background-size: cover;
   background-blend-mode: hard-light;
+  z-index: -2;
 }
 @media (min-width: 64em) {
   .hero {
@@ -414,7 +431,8 @@ a:hover {
 }
 .article__image {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .article__tag {
   display: block;
